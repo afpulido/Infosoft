@@ -7,7 +7,7 @@
 
     ### Tabla rol
     create table rol(
-        rol_id int primary key identity(1,1), /* Zona */
+        rol_id int primary key auto_increment, /* Zona */
         nombre varchar(10),
         descripcion varchar(45),
         fecha_creacion datetime default current_timestamp,
@@ -35,7 +35,7 @@
         articulo varchar(18),
         condicion_id int,
         usuario_id int,
-        precio total int,
+        precio_total int,
         fecha_creacion datetime default current_timestamp,
         fecha_eliminacion datetime,
         ultima_modificacion datetime default current_timestamp
@@ -49,7 +49,7 @@
         fecha_creacion datetime default current_timestamp,
         fecha_eliminacion datetime,
         ultima_modificacion datetime default current_timestamp
-    )
+    );
 
 ### Llaves foraneas
 
